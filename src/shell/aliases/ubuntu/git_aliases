@@ -9,7 +9,7 @@ function clone {
     if [ $# -eq 0 ]; then
         echo "Please enter repo name or full url:";
         read -r repo;
-        clone '$repo';
+        clone "$repo";
     elif [[ $1 == --help ]] || [[ $1 == --h ]] || [[ $1 == --? ]]; then
         echo "This will clone a git repo.";
         echo "";
