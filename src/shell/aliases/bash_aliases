@@ -28,3 +28,5 @@ alias y="yarn"
 # Load OS specific aliases.
 
 . "aliases/$OS/bash_aliases"
+. "aliases/$OS/git_aliases"
+. "aliases/$OS/ros_aliases"
