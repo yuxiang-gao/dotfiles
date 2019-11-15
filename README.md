@@ -1,4 +1,4 @@
-[Cătălin](https://github.com/yuxiang-gao)’s dotfiles
+[Yuxiang](https://github.com/yuxiang-gao)’s dotfiles
 ==============================================
 
 [![Build Status](https://github.com/yuxiang-gao/dotfiles/workflows/test/badge.svg)](https://github.com/yuxiang-gao/dotfiles/actions)
@@ -10,20 +10,18 @@ files described in the [`Local Settings`](#local-settings) section.
 Table of Contents
 -----------------
 
-- [Cătălin’s dotfiles](#c%c4%83t%c4%83lins-dotfiles)
-  - [Table of Contents](#table-of-contents)
-  - [Setup](#setup)
-  - [Customize](#customize)
-    - [Local Settings](#local-settings)
-      - [`~/.bash.local`](#bashlocal)
-      - [`~/.gitconfig.local`](#gitconfiglocal)
-      - [`~/.vimrc.local`](#vimrclocal)
-    - [Forks](#forks)
-  - [Update](#update)
-  - [Screenshots](#screenshots)
-    - [Git](#git)
-    - [tmux & Vim](#tmux--vim)
-  - [License](#license)
+* [🔧 Setup](#setup)
+* [💄 Customize](#customize)
+  * [🔀 Forks](#forks)
+  * [🌐 Local Settings](#local-settings)
+    * [🐚 `~/.bash.local`](#bashlocal)
+    * [🔁 `~/.gitconfig.local`](#gitconfiglocal)
+    * [⌨️  `~/.vimrc.local`](#vimrclocal)
+* [↕️  Update](#update)
+* [📸 Screenshots](#screenshots)
+  * [🔁 `Git`](#git)
+  * [⌨️  `tmux` & `Vim`](#tmux--vim)
+* [📄 License](#license)
 
 Setup
 -----
@@ -34,9 +32,9 @@ terminal:
 (⚠️  **DO NOT** run the `setup` snippet if you do not fully
 understand [what it does][setup]. Seriously, **DON'T**!)
 
-| OS       | Snippet                                                                                      |
-| :------- | :------------------------------------------------------------------------------------------- |
-| `macOS`  | `bash -c "$(curl -LsS https://raw.github.com/yuxiang-gao/dotfiles/master/src/os/setup.sh)"`  |
+| OS | Snippet |
+|:---|:---|
+| `macOS` | `bash -c "$(curl -LsS https://raw.github.com/yuxiang-gao/dotfiles/master/src/os/setup.sh)"` |
 | `Ubuntu` | `bash -c "$(wget -qO - https://raw.github.com/yuxiang-gao/dotfiles/master/src/os/setup.sh)"` |
 
 That's it! :sparkles:
@@ -61,8 +59,8 @@ The setup process will:
 Setup process in action:
 
 | ![Setup process on macOS](https://cloud.githubusercontent.com/assets/1223565/19314446/cd89a592-90a2-11e6-948d-9d75247088ba.gif) | ![Setup process on Ubuntu](https://cloud.githubusercontent.com/assets/1223565/19048636/e23e347a-89af-11e6-853c-98616b75b6ae.gif) |
-| :-----------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------: |
-|                                                             `macOS`                                                             |                                                             `Ubuntu`                                                             |
+|:---:|:---:|
+| `macOS` | `Ubuntu` |
 
 Customize
 ---------
@@ -119,7 +117,7 @@ such as the `Git` user credentials, e.g.:
 
 [user]
 
-    name = Cătălin Mariș
+    name = Yuxiang Gao
     email = yuxiang-gao@example.com
     signingkey = XXXXXXXX
 ```
@@ -151,26 +149,30 @@ Screenshots
 Output for `Git status`:
 
 | ![Output for Git status on macOS](https://cloud.githubusercontent.com/assets/1223565/10561038/f9f11a28-7525-11e5-8e1d-a304ad3557f9.png) | ![Output for Git status on Ubuntu](https://cloud.githubusercontent.com/assets/1223565/8397636/3708d218-1ddb-11e5-9d40-21c6871271b9.png) |
-| :-------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------: |
-|                                                                 `macOS`                                                                 |                                                                `Ubuntu`                                                                 |
+|:---:|:---:|
+| `macOS` | `Ubuntu` |
 
 Output for `Git log`:
 
 | ![Output for Git status on macOS](https://cloud.githubusercontent.com/assets/1223565/10560966/e4ec08a6-7523-11e5-8941-4e12f6550a63.png) | ![Output for Git log on Ubuntu](https://cloud.githubusercontent.com/assets/1223565/10560955/4b5e1300-7523-11e5-9e96-95ea67de9474.png) |
-| :-------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------: |
-|                                                                 `macOS`                                                                 |                                                               `Ubuntu`                                                                |
+|:---:|:---:|
+| `macOS` | `Ubuntu` |
 
 ### tmux & Vim
 
 | ![tmux and Vim on macOS](https://cloud.githubusercontent.com/assets/1223565/10561007/498e1212-7525-11e5-8252-81503b3d6184.png) |
-| ![tmux and Vim on Ubuntu](https://cloud.githubusercontent.com/assets/1223565/10560956/557ca2de-7523-11e5-9000-fc1e189a95f5.png) |
-| :-----------------------------------------------------------------------------------------------------------------------------: | :------: |
-|                                                             `macOS`                                                             | `Ubuntu` |
+![tmux and Vim on Ubuntu](https://cloud.githubusercontent.com/assets/1223565/10560956/557ca2de-7523-11e5-9000-fc1e189a95f5.png) |
+|:---:|:---:|
+| `macOS` | `Ubuntu` |
 
 License
 -------
 
 The code is available under the [MIT license][license].
+
+Credit
+-------
+[Cătălin](https://github.com/alrra)’s dotfiles
 
 <!-- Link labels: -->
 
