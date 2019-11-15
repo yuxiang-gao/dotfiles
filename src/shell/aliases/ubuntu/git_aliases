@@ -6,11 +6,10 @@
 # from https://www.phillip-kruger.com/post/some_bash_functions_for_git/
 
 function clone {
-
     if [ $# -eq 0 ]; then
         echo "Please enter repo name or full url:";
-        read repo;
-        clone $repo;
+        read -r repo;
+        clone '$repo';
     elif [[ $1 == --help ]] || [[ $1 == --h ]] || [[ $1 == --? ]]; then
         echo "This will clone a git repo.";
         echo "";
@@ -25,7 +24,7 @@ function clone {
         if [[ $1 == https://* ]] || [[ $1 == git://* ]] || [[ $1 == ssh://* ]] ; then
             URL=$1;
         else
-            URL='https://github.com/DavidGogh/'$1'.git';
+            URL='https://github.com/yuxiang-gao/'$1'.git';
         fi
 
         echo git clone "$URL";
@@ -41,7 +40,7 @@ function sync {
         echo "upstream exist";
     else
         echo "Please enter the upstream git url:";
-        read url;
+        read -r url;
         git remote add upstream "$url"
     fi
 
@@ -57,7 +56,7 @@ function commit {
 
     if [ $# -eq 0 ]; then
         echo "Please enter a commit message:";
-        read msg;
+        read -r msg;
         commit "$msg";
     elif [[ $1 == --help ]] || [[ $1 == --h ]] || [[ $1 == --? ]]; then
         echo "This will commit changes to a local git repo, eg:";
