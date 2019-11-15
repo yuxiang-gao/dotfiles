@@ -1,8 +1,12 @@
+#!/bin/bash
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
 # ROS related aliases
-alias cm=$'eval \'cd "$ROS_WORKSPACE"; catkin_make\''
-alias cb=$'eval \'cd "$ROS_WORKSPACE"; catkin build\''
-#alias cb=$'eval \'cd "$ROS_WORKSPACE"; catkin build --cmake-args -DPYTHON_VERSION=3.6\''
-alias ss=$'eval \'source "$ROS_WORKSPACE"/devel/setup.bash\''
+alias cm='eval '\''cd ${ROS_WORKSPACE}; catkin_make -j8'\'' '
+alias cb='eval '\''cd ${ROS_WORKSPACE}; catkin build'\'' '
+# alias cb=$'eval '''cd "$ROS_WORKSPACE"; catkin build --cmake-args -DPYTHON_VERSION=3.6''''
+alias ss='eval '\''source ${ROS_WORKSPACE}/devel/setup.bash'\'' '
 alias tl='rostopic list'
 alias te='rostopic echo'
 alias th='rostopic hz'
@@ -10,4 +14,4 @@ alias sl='rosservice list'
 alias sc='rosservice call'
 alias mi='rosmsg info'
 alias si='rossrv info'
-alias ros_dep_install='rosdep install --from-paths src --ignore-src -r -y'
+alias rosdep_install='eval '\''rosdep install --from-paths src --ignore-src -r -y'\'' '
