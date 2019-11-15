@@ -49,3 +49,36 @@ alias u="sudo apt-get update \
             && sudo apt-get upgrade \
             && npm install -g npm \
             && npm upgrade -g"
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+# use color
+alias ls="ls --color=auto"
+alias dir="dir --color=auto"
+alias grep="grep --color=auto"
+alias dmesg='dmesg --color'
+
+# extended listing
+alias ll='ls -halF'
+alias la='ls -A'
+alias l='ls -CF'
+
+# ensure remove confirmations
+alias rm='rm -i'
+
+# human readable df
+alias df='df -h'
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+# docker
+alias manifest-tool="docker run --rm weshigbee/manifest-tool"
+alias portainer="docker run -d -p 9000:9000 -v /var/run/docker.sock:/var/run/docker.sock portainer/portainer"
+
+
+# jupyter/anaconda
+alias jpnb='docker run -i -t -p 8888:8888 continuumio/anaconda3 /bin/bash -c "/opt/conda/bin/conda install jupyter -y --quiet && mkdir /opt/notebooks && /opt/conda/bin/jupyter notebook --notebook-dir=/opt/notebooks --ip='*' --port=8888 --no-browser"'
+
+
+. git_aliases
+. ros_aliases
